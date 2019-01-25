@@ -26,6 +26,8 @@ export default class App extends Vue {
 
   > .main {
     height: calc(100vh - 70px);
+    padding: 0 100px;
+    min-width: 1200px;
     overflow: auto;
   }
 }

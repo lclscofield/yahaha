@@ -1,6 +1,6 @@
 <template>
   <div class="diy-card" :title="cardData.cardTitle">
-    <card padding="10">
+    <card :padding="10">
       <div class="diy-card-content">
         <img :src="cardData.img" class="diy-card-img">
         <span class="diy-card-title">{{ cardData.cardTitle }}</span>
@@ -32,7 +32,7 @@ export default class DiyCard extends Vue {
 <style lang="scss" scoped>
 .diy-card {
   width: 150px;
-  margin: 0 20px;
+  margin: 0 25px;
   .diy-card-content {
     display: flex;
     flex-direction: column;

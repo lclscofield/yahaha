@@ -16,13 +16,22 @@ import DiyCard from '../../components/DiyCard.vue'
   }
 })
 export default class Movies extends Vue {
-  title: string = 'movies'
+  title: string = '电影'
   cardsData: any[] = [{
-    img: 'https://i.loli.net/2017/08/13/599044275d5fc.jpg',
+    img: 'https://extraimage.net/images/2018/12/24/04e68cecbfc5b6ac1d0c8efa38ab8f13.jpg',
     cardTitle: '神奇动物在哪里'
   }, {
-    img: 'https://i.loli.net/2017/08/13/599044275d5fc.jpg',
+    img: 'https://extraimage.net/images/2018/12/24/04e68cecbfc5b6ac1d0c8efa38ab8f13.jpg',
     cardTitle: '海王'
+  }, {
+    img: 'https://extraimage.net/images/2018/12/24/04e68cecbfc5b6ac1d0c8efa38ab8f13.jpg',
+    cardTitle: '神奇动物在哪里'
+  }, {
+    img: 'https://extraimage.net/images/2018/12/24/04e68cecbfc5b6ac1d0c8efa38ab8f13.jpg',
+    cardTitle: '海王'
+  }, {
+    img: 'https://extraimage.net/images/2018/12/24/04e68cecbfc5b6ac1d0c8efa38ab8f13.jpg',
+    cardTitle: '神奇动物在哪里'
   }]
 }
 </script>

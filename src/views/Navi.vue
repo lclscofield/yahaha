@@ -1,7 +1,7 @@
 <template>
   <div class="navi">
     <i-menu mode="horizontal" theme="light" active-name="Movies">
-      <menu-item :name="item.name" :to="item.link" v-for="(item, index) in message" :key="index">{{ item.name }}</menu-item>
+      <menu-item :name="item.name" :to="item.link" v-for="(item, index) in message" :key="index">{{ item.title }}</menu-item>
     </i-menu>
   </div>
 </template>
@@ -12,15 +12,18 @@ import { Vue } from 'vue-property-decorator'
 // 路由跳转接口
 interface ToLink {
   name: string
+  title: string
   link: string
 }
 
 export default class Navi extends Vue {
   message: ToLink[] = [{
     name: 'Movies',
+    title: '电影',
     link: 'movies'
   }, {
     name: 'Books',
+    title: '书籍',
     link: 'books'
   }]
 }
